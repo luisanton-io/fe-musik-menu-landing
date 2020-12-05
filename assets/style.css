@@ -1,6 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap");
 
 h1 {
-    font-family: 'Jost', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Jost", Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    /* background-color: #181818; */
+    background: linear-gradient(45deg, rgba(4,4,4,1) 0%, rgba(29,32,57,1) 50%, rgba(46,40,40,1) 100%);
+
+    font-family: "Abel", Verdana, sans-serif;
+}
+
+#video-bg {
+    position: fixed;
+    opacity: 0.2;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    object-fit: cover;
+}
+
+.email-input {
+    border: 1px solid white;
+    color: white;
+    padding: 5px 12px;
+    width: 75%;
+}
+
+.email-input:focus {
+    outline: none;
+    border: 2px solid white;
+}
+
+.bg-form {
+    background-color: #181818;
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    z-index: -1;
+    top: -20%;
+    left: -20%;
+    opacity: 0.7;
+}
+
+@media (max-width: 450px) {
+    .bg-form {
+        display: none;
+    }
+
+    .email-input {
+        width: 100%;
+    }
 }
